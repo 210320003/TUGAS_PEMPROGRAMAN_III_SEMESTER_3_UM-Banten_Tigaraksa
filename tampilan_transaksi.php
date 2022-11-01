@@ -5,7 +5,7 @@
 	<body>
 	<h2>ZodiacStore.com</h2>
 	<br/>
-	<a href="inputtransaksi.php">+ TAMBAHKAN TRANSAKSI</a>
+	<a href="input_transaksi.php">+ TAMBAHKAN TRANSAKSI</a>
 	<br/>
 	<table border="1">
 	<tr>
@@ -33,8 +33,8 @@
 			<td><?php echo $d['jumlah_transaksi']; ?></td>
 			<td><?php echo $d['user_id']; ?></td>
 			<td>
-				<a href="edit_tampiltransaksi.php?id=<?php echo $d['id']; ?>">EDIT</a>
-				<a href="edit_tampiltransaksi.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+				<a href="edit_tampilan_transaksi.php?id=<?php echo $d['id']; ?>">EDIT</a>
+				<a href="edit_tampilan_transaksi.php?id=<?php echo $d['id']; ?>">HAPUS</a>
 			<td>
 		</tr>
 	<?php

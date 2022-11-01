@@ -5,7 +5,7 @@
 	<body>
 	<h2>ZodiacStore.com</h2>
 	<br/>
-	<a href="inputkategori.php">+ TAMBAHKAN KATEGORI</a>
+	<a href="input_kategori.php">+ TAMBAHKAN KATEGORI</a>
 	<br/>
 	<table border="1">
 	<tr>
@@ -23,8 +23,8 @@
 			<td><?php echo $no++; ?></td>
 			<td><?php echo $d['nama_kategori']; ?></td>
 			<td>
-				<a href="edit_tampilkategori.php?id=<?php echo $d['id']; ?>">EDIT</a>
-				<a href="edit_tampilkategori.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+				<a href="edit_tampilan_kategori.php?id=<?php echo $d['id']; ?>">EDIT</a>
+				<a href="edit_tampilan_kategori.php?id=<?php echo $d['id']; ?>">HAPUS</a>
 			<td>
 		</tr>
 	<?php

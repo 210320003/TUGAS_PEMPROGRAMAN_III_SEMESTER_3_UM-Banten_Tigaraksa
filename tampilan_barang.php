@@ -5,7 +5,7 @@
 	<body>
 	<h2>ZodiacStore.com</h2>
 	<br/>
-	<a href="inputbarang.php">+ TAMBAHKAN BARANG</a>
+	<a href="input_barang.php">+ TAMBAHKAN BARANG</a>
 	<br/>
 	<table border="1">
 	<tr>

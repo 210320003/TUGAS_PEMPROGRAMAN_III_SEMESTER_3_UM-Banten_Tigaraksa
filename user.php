@@ -13,7 +13,7 @@ $level = $_POST['level'];
 $status = $_POST['status'];
 $a=mysqli_query($koneksi,"insert into user values('','$Nama','$Password','$level','$status')");
 if ($a){
-header("location:tampiluser.php");
+header("location:tampilan_user.php");
 }else{
 	echo mysqli_error();
 }
@@ -24,7 +24,7 @@ $resultkategori = mysqli_query($koneksi,$querykategori);
 <body>
 <h2>ZodiacStore.com<h/2>
 <br/>
-<a href="tampiluser.php">KEMBALI<a/>
+<a href="tampilan_user.php">KEMBALI<a/>
 <br/>
 <br/>
 <h3>TAMBAH DATA USER</h3>
