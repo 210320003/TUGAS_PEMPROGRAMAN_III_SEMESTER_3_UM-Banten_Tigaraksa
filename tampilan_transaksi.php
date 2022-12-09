@@ -31,7 +31,7 @@
 			<td><?php echo $d['jenis_transaksi']; ?></td>
 			<td><?php echo $d['barang_id']; ?></td>
 			<td><?php echo $d['jumlah_transaksi']; ?></td>
-			<td><?php echo $d['user_id']; ?></td>
+			<td><?php echo $d['id_user']; ?></td>
 			<td>
 				<a href="edit_tampilan_transaksi.php?id=<?php echo $d['id']; ?>">EDIT</a>
 				<a href="edit_tampilan_transaksi.php?id=<?php echo $d['id']; ?>">HAPUS</a>
