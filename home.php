@@ -8,17 +8,14 @@ if(isset($_SESSION['username']) && isset($_SESSION['level'])){
 <?php if($_SESSION['level']=='admin'){
 echo "<center><b>Welcome Admin</b></center><br>";
 ?>
-<center><a href="tampilan_member.php">Menu User</a></center>
-<center><a href="tampilan_barang.php">Menu admin</a></center>
-<center><a href="tampilan_kategori.php">Menu kategori</a></center>
-<center><a href="tampilan_transaksi.php">Menu Transaksi</a></center>
+<center><a href="tampilmember.php">Menu User</a></center>
+<center><a href="tampilbarang.php">Menu admin</a></center>
+<center><a href="tampilkategori.php">Menu kategori</a></center>
+<center><a href="tampiltransaksi1.php">Menu Transaksi</a></center>
 <center><a href="index.php">log out</a></center>
 <?php }else{
 echo "<center><b>Welcome User</b></center><br>";
 ?>
-<center><a href="tampilan_member.php">Menu User</a></center>
-<center><a href="tampilan_barang.php">Menu admin</a></center>
-<center><a href="tampilan_kategori.php">Menu kategori</a></center>
-<center><a href="tampilan_transaksi.php">Menu Transaksi</a></center>
+<center><a href="tampil_transaksi1.php">Menu Transaksi</a></center>
 <center><a href="index.php">log out</a></center>
 <?php } ?>

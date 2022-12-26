@@ -15,7 +15,6 @@
    }
  ?>
 <form method="POST" action="session.php">
-<link rel="stylesheet" type="text/css" href="style11.css">
   <center>Silahkan Login</center>
    
     <center><table class="table table-dark">

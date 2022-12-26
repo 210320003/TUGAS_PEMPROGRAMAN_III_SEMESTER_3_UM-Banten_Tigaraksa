@@ -1,14 +1,8 @@
 <! DOCTYPE html>
 <html>
-<head> 
-    <style> 
-    html{
-        background:url('img/tio13.jpg');
-        background-repeat:no-repeat;
-        background-size:cover;
-    }
-</style> 
-<title>ZodiacStore.com></title>
+<html>
+<title>Zodiac.com></title>
+<link rel="stylesheet" type="text/css" href="bg.css">
 </head>
 <?php
 //koneksi database
@@ -29,7 +23,7 @@ $member_id = $_POST['member_id'];
 $a=mysqli_query($koneksi,"insert into transaksi values('','tgl_transaksi','no_transaksi','jenis_transaksi','barang_id','jumlah_transaksi','diskon_barang','diskon_member','total_pembelian','total_diskon','total_transaksi,','member_id')");
 if ($a)
 {
-header("location:tampilan_transaksi_diskon.php");
+header("location:tampiltransaksi1.php");
 }
 else
 {
@@ -45,12 +39,12 @@ $resultmember = mysqli_query($koneksi,$querymember);
 
 ?>
 <body>
-<h2>Zodiac Store.com<h/2>
+<h2>Zodiac.com<h/2>
 <br/>
-<a href="tampilan_transaksi_diskon.php">KEMBALI<a/>
+<a href="tampiltransaksi1.php">KEMBALI<a/>
 <br/>
 <br/>
-<h3>TAMBAHKAN DATA TRANSAKSI-Tio-</h3>
+<h3>TAMBAH DATA TRANSAKSI</h3>
 <form method="POST">
 	<table>
 	<tr>

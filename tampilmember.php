@@ -1,11 +1,18 @@
+<?php
+include 'koneksi.php';
+	$no =1;
+	$data = mysqli_query($koneksi,"select * from member");
+	?>
+	<form method="POST">
 </html>
 	<head>
-	<title>ZodiacStore.com</title>
+	<title>Zodiac.com</title>
+    <link rel="stylesheet" type="text/css" href="bg.css">
 	</head>
 	<body>
-	<h2>Pemograman 3 2022-TIO-</h2>
+	<h2>Pemograman 3 2022</h2>
 	<br/>
-	<a href="member.php">TAMBAH MEMBER</a>
+	<a href="inputmember.php">+ TAMBAH MEMBER</a>
 	<br/>
 	<table border="1">
 	<tr>

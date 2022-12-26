@@ -1,7 +1,8 @@
 <! DOCTYPE html>
 <html>
 <html>
-<title>ZodiacStore.com></title>
+<title>Zodiac.com</title>
+<link rel="stylesheet" type="text/css" href="bg.css">
 </head>
 <?php
 //koneksi database
@@ -11,7 +12,7 @@ if(!empty($_POST['save'])){
 $level = $_POST['level'];
 $a=mysqli_query($koneksi,"insert into member values('','$Nama','$level')");
 if ($a){
-header("location:tampilan_member.php");
+header("location:tampilmember.php");
 }else{
 	echo mysqli_error();
 }
@@ -19,12 +20,12 @@ header("location:tampilan_member.php");
 
 ?>
 <body>
-<h2>Zodiac Store.com<h/2>
+<h2>Zodiac.com<h/2>
 <br/>
-<a href="tampilan_member.php">KEMBALI<a/>
+<a href="tampilmember.php">KEMBALI<a/>
 <br/>
 <br/>
-<h3>TAMBAHKAN DATA MEMBER</h3>
+<h3>TAMBAH DATA MEMBER</h3>
 <form method="POST">
 	<table>
 	<tr>
@@ -35,9 +36,9 @@ header("location:tampilan_member.php");
 	<td>level</td>
 	<td><select name="level">
 	<option value="">-----Pilih</option>
-	<option value="1">Gold</option>
-	<option value="2">Silver</option>
-	<option value="3">Platinum</option>
+	<option value="Gold">Gold</option>
+	<option value="Silver">Silver</option>
+	<option value="Platinum">Platinum</option>
 	</select>
 	<td>
 	</tr>

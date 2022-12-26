@@ -1,7 +1,7 @@
 <! DOCTYPE html>
 <html>
-<html>
-<title>ZodiacStore.com</title>
+<title>Zodiac.com></title>
+<link rel="stylesheet" type="text/css" href="bg.css">
 </head>
 <?php
 //koneksi database
@@ -13,18 +13,17 @@ $level = $_POST['level'];
 $status = $_POST['status'];
 $a=mysqli_query($koneksi,"insert into user values('','$Nama','$Password','$level','$status')");
 if ($a){
-header("location:tampilan_user.php");
+header("location:tampiluser.php");
 }else{
 	echo mysqli_error();
 }
 }
-$querykategori = "SELECT * FROM kategori";
-$resultkategori = mysqli_query($koneksi,$querykategori);
+
 ?>
 <body>
-<h2>ZodiacStore.com<h/2>
+<h2>Zodiac.com<h/2>
 <br/>
-<a href="tampilan_user.php">KEMBALI<a/>
+<a href="tampiluser.php">KEMBALI</a>
 <br/>
 <br/>
 <h3>TAMBAH DATA USER</h3>
@@ -43,7 +42,7 @@ $resultkategori = mysqli_query($koneksi,$querykategori);
 	<td><select name="level">
 	<option value="">-----Pilih</option>
 	<option value="1">Admin</option>
-	<option value="2">Staf</option>
+	<option value="2">User</option>
 	<option value="3">Spv</option>
 	<option value="4">mgr</option>
 	</select>

@@ -1,18 +1,12 @@
-<html>
+</html>
 	<head>
-    <style> 
-    html{
-        background:url('img/tio13.jpg');
-        background-repeat:no-repeat;
-        background-size:cover;
-    }
-</style>
-	<title>ZodiacStore.com</title>
+	<title>Zodiac.com</title>
+    <link rel="stylesheet" type="text/css" href="bg.css">
 	</head>
 	<body>
-	<h2>ZodiacStore.com</h2>
+	<h2>Zodiac.com</h2>
 	<br/>
-	<a href="input_transaksi_diskon.php">TAMBAH TRANSAKSI</a>
+	<a href="inputtransaksi1.php">+ TAMBAH TRANSAKSI</a>
 	<br/>
 	<table border="1">
 	<tr>
@@ -36,6 +30,8 @@
 	$data = mysqli_query($koneksi,"select * from transaksi");
 	while($d= mysqli_fetch_array($data)){
 		?>
+		<form method="POST">
+		<tr>
 		<tr>
 			<td><?php echo $no++; ?></td>
 			<td><?php echo $d['tgl_transaksi']; ?></td>
@@ -50,8 +46,8 @@
 			<td><?php echo $d['total_transaksi']; ?></td>
 			<td><?php echo $d['member_id']; ?></td>
 			<td>
-				<a href="edit_tampilan_transaksi_diskon.php?id=<?php echo $d['id']; ?>">EDIT</a>
-				<a href="edit_tampilan_transaksi_diskon.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+				<a href="edittransaksi.php?id_transaksi=<?php echo $d['id_transaksi']; ?>">EDIT</a>
+				<a href="hapustransaksi.php?id_transaksi=<?php echo $d['id_transaksi']; ?>">HAPUS</a>
 			<td>
 		</tr>
 	<?php

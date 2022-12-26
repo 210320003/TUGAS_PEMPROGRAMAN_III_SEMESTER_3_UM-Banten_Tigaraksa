@@ -1,11 +1,12 @@
 </html>
 	<head>
-	<title>ZodiacStore.com</title>
+	<title>Zodiac.com</title>
+    <link rel="stylesheet" type="text/css" href="bg.css">
 	</head>
 	<body>
-	<h2>ZodiacStore.com</h2>
+	<h2>Zodiac.com</h2>
 	<br/>
-	<a href="input_kategori.php">+ TAMBAHKAN KATEGORI</a>
+	<a href="inputkategori.php">+ TAMBAH KATEGORI</a>
 	<br/>
 	<table border="1">
 	<tr>
@@ -23,8 +24,8 @@
 			<td><?php echo $no++; ?></td>
 			<td><?php echo $d['nama_kategori']; ?></td>
 			<td>
-				<a href="edit_tampilan_kategori.php?id=<?php echo $d['id']; ?>">EDIT</a>
-				<a href="edit_tampilan_kategori.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+				<a href="editkategori.php?id_kategori=<?php echo $d['id_kategori']; ?>">EDIT</a>
+				<a href="hapuskategori.php?id_kategori=<?php echo $d['id_kategori']; ?>">HAPUS</a>
 			<td>
 		</tr>
 	<?php

@@ -1,7 +1,8 @@
 <! DOCTYPE html>
 <html>
 <html>
-<title>ZodiacStore.com</title>
+<title>Zodiac.com></title>
+<link rel="stylesheet" type="text/css" href="bg.css">
 </head>
 <?php
 //koneksi database
@@ -15,7 +16,7 @@ $kategori_id = $_POST['kategori_id'];
 $a=mysqli_query($koneksi,"insert into barang values('','$nama_barang','$kode_barang','$qty','$kategori_id')");
 if ($a)
 {
-header("location:tampilan_barang.php");
+header("location:tampilbarang.php");
 }
 else
 {
@@ -28,9 +29,9 @@ $resultkategori = mysqli_query($koneksi,$querykategori);
 
 ?>
 <body>
-<h2>Zodiac Store.com<h/2>
+<h2>Zodiac.com<h/2>
 <br/>
-<a href="tampilan_barang.php">KEMBALI<a/>
+<a href="tampilbarang.php">KEMBALI<a/>
 <br/>
 <br/>
 <h3>TAMBAH DATA Barang</h3>
